@@ -1,0 +1,44 @@
+/* Ini File CSS */
+body{
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+header{
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    /* border-radius: 50%; */
+    width: 300px;
+    height: 100px;
+    /* border: 1px solid black; */
+    background-image: url(https://i.pinimg.com/736x/83/a9/c0/83a9c0c695033b6e19c4c9d1aa916d5f.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    
+}
+
+nav > a{
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    /* display: flex; */
+    text-decoration: none;
+    padding: 5px 25px;
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
