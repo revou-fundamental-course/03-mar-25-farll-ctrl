@@ -1,5 +1,35 @@
 // ini file JavaScript
 
+// Kode untuk memasukkan dan menampilkan nama pengunjung
+document.addEventListener("DOMContentLoaded", function() {
+    let nama = prompt("Masukkan Nama Anda:");
+    document.querySelector(".username").textContent = nama;
+
+    document.getElementById("form-pesan").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let nama = document.getElementById("nama").value;
+        let jenkel = document.querySelector('input[name="gender"]:checked')?.value || "Tidak dipilih";
+        let email = document.getElementById("email").value;
+        let nohp = document.getElementById("no_hp").value;
+        let tujuan = document.getElementById("tujuan").value;
+        let tanggal = document.getElementById("tanggal").value;
+        let pesan = document.getElementById("pesan").value;
+
+        document.querySelector(".pesanan").innerHTML = `
+            <h1>Pesanan Anda:</h1>
+            <p><strong>Nama: </strong> ${nama}</p>
+            <p><strong>Jenis Kelamin: </strong> ${jenkel}</p>
+            <p><strong>Email: </strong> ${email}</p>
+            <p><strong>No. HP: </strong> ${nohp}</p>
+            <p><strong>Tujuan: </strong> ${tujuan}</p>
+            <p><strong>Tanggal: </strong> ${tanggal}</p>
+            <p><strong>Pesan: </strong> ${pesan}</p>
+        `;
+    });
+});
+
+
 
 let bannerIndex = 0;
 showBanner();

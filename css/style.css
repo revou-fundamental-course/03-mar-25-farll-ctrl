@@ -48,14 +48,27 @@ nav > a{
     color: black;
 }
 
+main{
+    padding: 20px;
+}
+
 #home{
     padding: 30px;
 }
 
+.banner-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
 .banner-img{
-    height: 500px;
+    height: 400px;
+    width: 900px;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
     border-radius: 10px;
 }
 
@@ -71,6 +84,37 @@ nav > a{
     background-image: url(https://i.pinimg.com/736x/9e/dc/1b/9edc1b7e973c8227543837575615480e.jpg);
 }
 
+#keunggulan{
+    padding: 20px;  
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.card{
+    text-align: center;
+    align-items: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.card i{
+    font-size: 40px;
+    color: #f1c40f;
+    
+}
+
+#pesan{
+    padding: 20px;
+}
+
 .form-container{
     display: flex;
     padding: 20px;
@@ -79,7 +123,8 @@ nav > a{
 }
 
 form{
-    flex: 2;
+    gap: 0.5rem;
+    flex: 3;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -89,17 +134,92 @@ form{
 }
 
 .pesanan{
-    flex: 3;
+    flex: 2;
     /* display: flex; */
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 720px){
+
+    .form-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    form{
+        flex: 1;
+    }
+
+    .pesanan{
+        flex: 1;
+    }
+    
+}
+
+@media screen and (max-width: 525px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    .logo{
+        width: 200px;
+        height: 50px;
+    }
+
+    nav a{
+        padding: 10px 15px;
+    }
+
+    main{
+        padding: 10px;
+    }
+
+    #beranda h1{
+        /* font-size: 1.2rem; */
+        text-align: center;
+    }
+
+    #beranda p{
+        text-align: center;
+    }
+
+    .banner-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner-img{
+        height: 300px;
+        width: 100%;
+    }
+
+    .card-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    #pesan h1{
+        text-align: center;    
+    }
+    
 }
