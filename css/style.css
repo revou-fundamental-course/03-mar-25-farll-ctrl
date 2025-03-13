@@ -1,6 +1,12 @@
 /* Ini File CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: black;
 }
 
@@ -9,12 +15,15 @@ header{
     padding: 8px;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .logo{
     /* border-radius: 50%; */
     width: 300px;
-    height: 100px;
+    height: 70px;
     /* border: 1px solid black; */
     background-image: url(https://i.pinimg.com/736x/83/a9/c0/83a9c0c695033b6e19c4c9d1aa916d5f.jpg);
     background-position: center;
@@ -23,18 +32,70 @@ header{
 
 nav{
     display: flex;
-    border: 1px solid black;
-    /* border-radius: 10px; */
     
 }
 
+nav a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
 nav > a{
-    border: 1px solid black;
-    /* border-radius: 10px; */
-    /* display: flex; */
     text-decoration: none;
-    padding: 5px 25px;
+    padding: 10px 25px;
     color: black;
+}
+
+#home{
+    padding: 30px;
+}
+
+.banner-img{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.banner-1{
+    background-image: url(https://i.pinimg.com/736x/11/b9/11/11b911b277091050a6cd0ae3a5f53124.jpg);
+}
+
+.banner-2{
+    background-image: url(https://i.pinimg.com/736x/32/cf/f0/32cff0ae101f74f579153d7964cacdbf.jpg);
+}
+
+.banner-3{
+    background-image: url(https://i.pinimg.com/736x/9e/dc/1b/9edc1b7e973c8227543837575615480e.jpg);
+}
+
+.form-container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+form{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pesanan{
+    flex: 3;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer{
